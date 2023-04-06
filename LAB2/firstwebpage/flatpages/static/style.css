@@ -1,11 +1,33 @@
-TABLE {
-    width: 300px; /* Ширина таблицы */
-    border-collapse: collapse; /* Убираем двойные линии между ячейками */
-   }
-   TD, TH {
-    padding: 3px; /* Поля вокруг содержимого таблицы */
-    border: 1px solid black; /* Параметры рамки */
-   }
-   TH {
-    background: #b0e0e6; /* Цвет фона */
-   }
+body {
+    background: #1abc9c; 
+    font-family: Tahoma, Arial, sans-serif; 
+    color: #333;
+}
+table {
+    border-collapse: collapse;
+}
+p, h4 {
+    font-size: 20px; 
+    margin-bottom: 0;
+}
+h4 {
+    font-size: 20px;
+    font-family:courier, courier new, serif;
+}
+ul, ol {
+    margin: 0;
+}
+table tr td {
+    padding: 5px;
+}
+table {
+	width: 100%;
+}
+
+img {
+	height: 30px;
+	width: auto;
+	padding-right: 10px;
+}
+
+h1{font-family:courier, courier new, serif;}

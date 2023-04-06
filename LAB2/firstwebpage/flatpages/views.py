@@ -6,5 +6,5 @@ def hello(request):
     return HttpResponse("Привет, Мир!",content_type="text/plan", charset='UTF-8')
 
 def home(request):
-    return render(request, 'index.html')
+    return render(request, 'static_handler.html')
 
