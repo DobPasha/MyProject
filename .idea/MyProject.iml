@@ -4,6 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/LAB2/firstwebpage/flatpages" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LAB3/blog/articles" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LAB4/blog/articles" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="inheritedJdk" />

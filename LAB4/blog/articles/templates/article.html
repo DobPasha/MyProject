@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/static/css/article.css">
 </head>
 <body>
 <div class="header">
-
-    <img src="{{ STATIC_URL }}/static/images/python.png" />
+        <div id="logo_article_id">
+        <p id="logo_text">Django public blog</p>
+        <img src="{{ STATIC_URL }}/static/images/python.png" />
+    </div>
 </div>
 <div class="archive">
     {% for post in posts %}
