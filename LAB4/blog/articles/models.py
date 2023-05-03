@@ -4,11 +4,14 @@ from django.urls import reverse
 import uuid
 
 
+
 class Article(models.Model):
     title = models.CharField(max_length=200)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
+    author_article = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True)
     text = models.TextField()
     created_date = models.DateField(auto_now_add=True)
+    date_article = models.DateField('Date create article', null=False)
     def __unicode__ (self):
         return "%s: %s" % (self.author.username, self.title)
     def get_excerpt(self):
