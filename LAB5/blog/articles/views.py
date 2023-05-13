@@ -1,10 +1,16 @@
 from .models import Article
+from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 from django.http import Http404
 import sqlite3
+from .forms import SignUpForm
+from django.contrib import messages
 
 def sign_in(request):
-    return render(request, 'create_user.html')
+    return render(request, 'login.html')
+
+def sign_up(request):
+    return render(request, 'registration.html')
 
 def archive(request):
     return render(request, 'archive.html', {"posts": Article.objects.all()})
@@ -62,3 +68,14 @@ def create_post(request):
 
     else:
         raise Http404
+
+def sign_up1(request):
+    if request.method == 'POST':
+        form = SignUpForm(request.POST)
+        if form.is_valid():
+            user = form.save(commit=False)
+            user.save()
+            return redirect('login')
+    else:
+        form = SignUpForm()
+    return render(request, 'registration.html', {'form': form})

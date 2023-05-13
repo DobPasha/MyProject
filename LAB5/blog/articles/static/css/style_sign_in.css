@@ -17,7 +17,7 @@
     padding-bottom: 64px;
 }
 
-.input_email, .input_password{
+.input_email, .input_password, .authorization_block input{
     display: block; /* Сделать элементы блочными */
     width: 100%; /* Занять всю доступную ширину родительского блока */
     box-sizing: border-box; /* Учесть ширину границ и отступов в общую ширину элемента */
@@ -49,3 +49,16 @@ label{
     border: none;
 }
 
+ul.errorlist {
+    display: none;
+}
+
+ul.errorlist + p.error-message {
+    color: red !important;
+}
+
+
+.error-message {
+    color: #e67093;
+    font-weight: bold;
+}
