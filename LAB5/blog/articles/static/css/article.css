@@ -56,10 +56,6 @@ body {
     text-decoration: underline;
 }
 
-.article-text{
-    text-align: justify;
-}
-
 .article-info div {
   display: inline-block;
   vertical-align: middle;
@@ -78,4 +74,17 @@ body {
 
 a {
 color: white;
+}
+
+.article-text{
+    text-align: justify;
+    width: 1024px;
+}
+
+#article_title, #article_text{
+    width:1024px;
+}
+
+#article_text{
+    height: 300px;
 }

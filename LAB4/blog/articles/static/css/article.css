@@ -18,7 +18,7 @@ body {
     border: 1px solid #4a9177;
     text-align: center;
     border-radius: 10px;
-    background-image: linear-gradient(to bottom right, #4a9177, #000000);
+    background-image: linear-gradient(to bottom right, #4a9177, 40%, #38f5a0);
 }
 
 #all_states{

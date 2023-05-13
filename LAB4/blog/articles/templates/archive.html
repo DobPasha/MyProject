@@ -15,7 +15,7 @@
 <div class="archive">
     {% for post in posts %}
     <div class="one-post">
-        <h2 class="post-title">{{ post.title }}</h2>
+        <h2 class="post-title"><a href="http://127.0.0.1:8000/article/{{ post.id }}">{{ post.title }}</a></h2>
         <div class="article-info">
             <div class="article-author">{{ post.author_article.last_name}} {{ post.author_article.first_name}}</div>
             <div class="article-created-date">{{ post.date_article|date:"j F Y"|title }}</div>
