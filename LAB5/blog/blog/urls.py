@@ -27,5 +27,6 @@ urlpatterns = [
     path('hello/', views.article, name='article'),
     path('', views.archive, name='archive'),
     path('article/new/', views.create_post, name='articlenew'),
+    path('sign_in/', views.sign_in, name='sign_in'),
 
 ]

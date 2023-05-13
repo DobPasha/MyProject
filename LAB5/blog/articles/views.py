@@ -3,6 +3,8 @@ from django.shortcuts import render, redirect
 from django.http import Http404
 import sqlite3
 
+def sign_in(request):
+    return render(request, 'create_user.html')
 
 def archive(request):
     return render(request, 'archive.html', {"posts": Article.objects.all()})
