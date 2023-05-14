@@ -11,11 +11,15 @@
         <p id="logo_text">Django public blog</p>
         <img src="{{ STATIC_URL }}/static/images/python.png"/>
     </div>
+    <div class = 'autorization_block'>
+        <div class = 'sig_in_section'><a href="http://127.0.0.1:8000/accounts/login/" class="a_sig">Sig in</a></div>
+        <div class = 'sig_up_section'><a href="http://127.0.0.1:8000/signup/" class="a_sig">Sig up</a></div>
+    </div>
 </div>
 <div class="archive">
     {% for post in posts %}
     <div class="one-post">
-        <h2 class="post-title">{{ post.title }}</h2>
+        <h2 class="post-title"><a href="http://127.0.0.1:8000/article/{{ post.id }}">{{ post.title }}</a></h2>
         <div class="article-info">
             <div class="article-author">{{ post.author_article.last_name}} {{ post.author_article.first_name}}</div>
             <div class="article-created-date">{{ post.date_article|date:"j F Y"|title }}</div>

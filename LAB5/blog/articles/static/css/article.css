@@ -11,14 +11,41 @@ body {
     text-align: center;
 }
 
-#logo_article_id{
-    /*float: left;*/
-    display: inline-block;
-    padding: 10px;
-    border: 1px solid #4a9177;
-    text-align: center;
-    border-radius: 10px;
-    background-image: linear-gradient(to bottom right, #4a9177, #000000);
+#logo_article_id {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #4a9177;
+  text-align: center;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom right, #4a9177, #000000);
+}
+
+.autorization_block {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  float: right;
+}
+
+.sig_in_section,
+.sig_up_section {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #4a9177;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.a_sig{
+    color: white;
+    text-decoration: none;
+}
+
+.sig_in_section:hover,
+.sig_up_section:hover {
+  background-color: #000000;
 }
 
 #all_states{
@@ -87,4 +114,8 @@ color: white;
 
 #article_text{
     height: 300px;
+}
+
+.header_main_page{
+
 }
