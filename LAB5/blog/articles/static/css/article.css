@@ -28,7 +28,9 @@ body {
 }
 
 .sig_in_section,
-.sig_up_section {
+.sig_up_section,
+.sig_out_section,
+.add_article_section {
   display: inline-block;
   padding: 5px 10px;
   background-color: #4a9177;
@@ -44,7 +46,9 @@ body {
 }
 
 .sig_in_section:hover,
-.sig_up_section:hover {
+.sig_up_section:hover,
+.sig_out_section:hover,
+.add_article_section:hover {
   background-color: #000000;
 }
 

@@ -11,10 +11,18 @@
         <p id="logo_text">Django public blog</p>
         <img src="{{ STATIC_URL }}/static/images/python.png"/>
     </div>
-    <div class = 'autorization_block'>
-        <div class = 'sig_in_section'><a href="http://127.0.0.1:8000/accounts/login/" class="a_sig">Sig in</a></div>
-        <div class = 'sig_up_section'><a href="http://127.0.0.1:8000/signup/" class="a_sig">Sig up</a></div>
+    {% if user.is_authenticated %}
+    <div class='autorization_block'>
+        <div class='add_article_section'><a href="{% url 'articlenew' %}" class="a_sig">Написать статью</a></div>
+        <div class='sig_out_section'><a href="{% url 'logout' %}?next=/ " class="a_sig">Logout</a></div>
     </div>
+    {% else %}
+    <!-- Если пользователь не авторизован, то отображаем блок авторизации -->
+    <div class='autorization_block'>
+        <div class='sig_in_section'><a href="{% url 'login' %}" class="a_sig">Sig in</a></div>
+        <div class='sig_up_section'><a href="{% url 'sign_up' %}" class="a_sig">Sig up</a></div>
+    </div>
+    {% endif %}
 </div>
 <div class="archive">
     {% for post in posts %}
